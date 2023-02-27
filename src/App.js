@@ -127,7 +127,7 @@ function App() {
           </button>
           <div className="location">
             <p>{data.name}</p>
-            <p>{data.sys.country}</p>
+            {data.sys ? <p>{data.sys.country}</p> : null}
           </div>
           <div className="tempUnitMeasure"></div>
           <div className="temperatures">
